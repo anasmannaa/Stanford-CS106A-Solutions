@@ -15,14 +15,7 @@ public class CheckerboardKarel extends SuperKarel {
 				runOneRound();
 			}
 		} else {
-			turnLeft();
-			while (frontIsClear()) {
-				move();
-				if (frontIsClear()) {
-					move();
-					putBeeper();
-				}
-			}
+			fillOneColumn();
 		}
 	}
 	
@@ -70,6 +63,17 @@ public class CheckerboardKarel extends SuperKarel {
 			buildEven();
 			fillRow();
 			turnLeft();
+		}
+	}
+	
+	private void fillOneColumn() {
+		turnLeft();
+		while (frontIsClear()) {
+			move();
+			if (frontIsClear()) {
+				move();
+				putBeeper();
+			}
 		}
 	}
 
