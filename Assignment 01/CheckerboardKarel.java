@@ -1,11 +1,6 @@
-/*
- * File: CheckerboardKarel.java
- * ----------------------------
- * When you finish writing it, the CheckerboardKarel class should draw
- * a checkerboard using beepers, as described in Assignment 1.  You
- * should make sure that your program works for all of the sample
- * worlds supplied in the starter folder.
- */
+// Stanford 106A
+// Assignment 01 - Problem 03 
+// https://see.stanford.edu/materials/icspmcs106a/07-assignment-1-karel.pdf
 
 import stanford.karel.*;
 
