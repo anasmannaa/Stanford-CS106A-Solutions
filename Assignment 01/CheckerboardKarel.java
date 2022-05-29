@@ -12,14 +12,7 @@ public class CheckerboardKarel extends SuperKarel {
 			fillRow();
 			turnLeft();
 			while (frontIsClear()) {
-				buildOdd();
-				fillRow();
-				turnRight();
-				if (frontIsClear()) {
-					buildEven();
-					fillRow();
-					turnLeft();
-				}
+				runOneRound();
 			}
 		} else {
 			turnLeft();
@@ -66,6 +59,17 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 			putBeeper();
 			turnRight();
+		}
+	}
+	
+	private void runOneRound() {
+		buildOdd();
+		fillRow();
+		turnRight();
+		if (frontIsClear()) {
+			buildEven();
+			fillRow();
+			turnLeft();
 		}
 	}
 
