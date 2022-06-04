@@ -36,10 +36,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		putBeeper();
 	} 
 	
-	private void reposition() {
-		turnAround();
-	}
-	
 	private void fillSidesAndMidpoint() {
 		while (frontIsClear()) {
 			move();
@@ -68,6 +64,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		if (facingWest()) {
 			turnAround();
 		}
+	}
+	
+	private void reposition() {
+		turnAround();
 	}
 	
 	private void stepBack() {
