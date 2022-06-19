@@ -1,6 +1,6 @@
 
 // Stanford 106A
-// Assignment 02 - Problem 02
+// Assignment 02 - Problem 03
 // https://see.stanford.edu/materials/icspmcs106a/13-assignment-2-simple-java.pdf
 
 import acm.graphics.*;
